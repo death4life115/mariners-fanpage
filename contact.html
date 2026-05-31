@@ -2,10 +2,11 @@
 <!-- This website template was created by: Jose Camacho -->
 <html lang="en">
 <head>
-	<title>Seattle Mariners Fan Page</title>
+	<title>Contact Us - Location | Seattle Mariners Fan Page</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/styles.css">
-	<meta name ="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Whether you want to come and catch a game, come to take a personal ballpark tour, or have any general questions please feel free to contact us!">
 	<link href="https://fonts.googleapis.com/css?family=Francois+One|Roboto+Slab&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
@@ -14,26 +15,43 @@
 </head>
 <body>
 
+	<!-- Skip to Content Link -->
+	<a class="skip" href="#content">Skip to Content</a>
+
 	<div id="container">
+	
+		<!-- Mobile Nav -->
+			<nav class="mobile-nav">
+				<div id="menu-links">
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="ballpark.html">Ballpark Tour</a>
+					<a href="players.html">Players</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<a class="menu-icon" onclick="hamburger()">
+					<div>&#9776;</div>
+				</a>
+			</nav>
 
 		<!-- Use the header area for the website name or logo -->
-		<header>
+		<header id="ms-logo">
 			<a href="index.html"><img src="images/Seattle-Mariners-Logo.png" alt="Seattle Mariners Logo"></a>
 		</header>
 			
-		<!-- Use the nav area to add hyperlinks to other pages within the website -->
-		<nav>
+		<!-- Tablet, Desktop Nav -->
+		<nav class="tablet-desktop">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
-				<li><a href="stadium.html">Stadium Tour</a></li>
+				<li><a href="ballpark.html">Ballpark Tour</a></li>
 				<li><a href="players.html">Players</a></li>
 				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</nav>
 		
 		<!-- Use the main area to add the main content of the webpage -->
-		<main>
+		<main id="contact">
 			
 		<div id="contact">
 			
@@ -104,11 +122,22 @@
 			
 		<!-- Use the footer area to add webpage footer content -->
 		<footer>
-			<p>&copy; Copyright 2026. All Rights Reserved.</p>
-			<p><a href="mailto:seattlemsfans@mlb.net">seattlemsfans@mlb.net</a></p>
+			
+			<div class="copyright">
+				<p>&copy; Copyright 2026. All Rights Reserved.</p>
+				<p><a href="mailto:seattlemsfans@mlb.net">seattlemsfans@mlb.net</a></p>
+			</div>
+				
+			<div class="social">
+				<a href="https://www.facebook.com/Mariners" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+				<a href="https://www.twitter.com/Mariners" target="_blank"><img src="images/twitter-logo.png" alt="black abd white Twitter logo"></a>
+			</div>
 		</footer>
 	
+	
 	</div>
+	
+	<script src="scripts/scripts.js"></script>
 	
 </body>
 </html>
